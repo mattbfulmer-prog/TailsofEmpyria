@@ -1,0 +1,112 @@
+{ "frames": {
+   "Transition_ToBlack_Screenwipe 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "sourceSize": { "w": 3246, "h": 2080 },
+    "duration": 100
+   },
+   "Transition_ToBlack_Screenwipe 1.aseprite": {
+    "frame": { "x": 3246, "y": 0, "w": 3246, "h": 2080 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "sourceSize": { "w": 3246, "h": 2080 },
+    "duration": 100
+   },
+   "Transition_ToBlack_Screenwipe 2.aseprite": {
+    "frame": { "x": 6492, "y": 0, "w": 3246, "h": 2080 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "sourceSize": { "w": 3246, "h": 2080 },
+    "duration": 100
+   },
+   "Transition_ToBlack_Screenwipe 3.aseprite": {
+    "frame": { "x": 9738, "y": 0, "w": 3246, "h": 2080 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "sourceSize": { "w": 3246, "h": 2080 },
+    "duration": 100
+   },
+   "Transition_ToBlack_Screenwipe 4.aseprite": {
+    "frame": { "x": 12984, "y": 0, "w": 3246, "h": 2080 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "sourceSize": { "w": 3246, "h": 2080 },
+    "duration": 100
+   },
+   "Transition_ToBlack_Screenwipe 5.aseprite": {
+    "frame": { "x": 16230, "y": 0, "w": 3246, "h": 2080 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "sourceSize": { "w": 3246, "h": 2080 },
+    "duration": 100
+   },
+   "Transition_ToBlack_Screenwipe 6.aseprite": {
+    "frame": { "x": 19476, "y": 0, "w": 3246, "h": 2080 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "sourceSize": { "w": 3246, "h": 2080 },
+    "duration": 100
+   },
+   "Transition_ToBlack_Screenwipe 7.aseprite": {
+    "frame": { "x": 22722, "y": 0, "w": 3246, "h": 2080 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "sourceSize": { "w": 3246, "h": 2080 },
+    "duration": 100
+   },
+   "Transition_ToBlack_Screenwipe 8.aseprite": {
+    "frame": { "x": 25968, "y": 0, "w": 3246, "h": 2080 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "sourceSize": { "w": 3246, "h": 2080 },
+    "duration": 100
+   },
+   "Transition_ToBlack_Screenwipe 9.aseprite": {
+    "frame": { "x": 29214, "y": 0, "w": 3246, "h": 2080 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "sourceSize": { "w": 3246, "h": 2080 },
+    "duration": 100
+   },
+   "Transition_ToBlack_Screenwipe 10.aseprite": {
+    "frame": { "x": 32460, "y": 0, "w": 3246, "h": 2080 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "sourceSize": { "w": 3246, "h": 2080 },
+    "duration": 100
+   },
+   "Transition_ToBlack_Screenwipe 11.aseprite": {
+    "frame": { "x": 35706, "y": 0, "w": 3246, "h": 2080 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 3246, "h": 2080 },
+    "sourceSize": { "w": 3246, "h": 2080 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.18-beta1-x64",
+  "image": "Transition_ToBlack_Screenwipe.png",
+  "format": "RGBA8888",
+  "size": { "w": 38952, "h": 2080 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Hidden", "from": 0, "to": 0, "direction": "forward", "color": "#000000ff" },
+   { "name": "WipeEffect", "from": 1, "to": 10, "direction": "forward", "color": "#000000ff" },
+   { "name": "Shown", "from": 11, "to": 11, "direction": "forward", "color": "#000000ff" }
+  ]
+ }
+}

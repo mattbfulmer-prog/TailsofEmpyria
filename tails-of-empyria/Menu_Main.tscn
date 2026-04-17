@@ -1,0 +1,383 @@
+[gd_scene format=3 uid="uid://c2dnlu25rydjq"]
+
+[ext_resource type="Texture2D" uid="uid://utgnes6k8hfd" path="res://Sprites/Illustration3_1.png" id="1_keokh"]
+[ext_resource type="Script" uid="uid://cjlm3s2flfnll" path="res://mainmenu.gd" id="2_433es"]
+[ext_resource type="Texture2D" uid="uid://bf3wbvksuplly" path="res://Sprites/Mainmenu_Newgame_InactivetoActive.png" id="3_apy4m"]
+[ext_resource type="Texture2D" uid="uid://ch3iy367uqcoq" path="res://Sprites/Mainmenu_Continue_InactivetoActive.png" id="3_lyypv"]
+[ext_resource type="AudioStream" uid="uid://bvwklkg4y3af3" path="res://Sounds/UI_BtnHover.wav" id="3_oohrw"]
+[ext_resource type="AudioStream" uid="uid://cpi8ek5kuqpyu" path="res://Sounds/UI_MM_Press.wav" id="4_haa6u"]
+[ext_resource type="Texture2D" uid="uid://1rebtwpguku5" path="res://Sprites/Mainmenu_Quit.png" id="6_oohrw"]
+[ext_resource type="Texture2D" uid="uid://bnqrxpcs71p4q" path="res://Sprites/Transition_ToBlack_Screenwipe.png" id="7_haa6u"]
+
+[sub_resource type="Animation" id="Animation_lyypv"]
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mainmenu/Newgamebutton/NewGame/Textanim_NewGame/MainmenuNewgame:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(1736, 0, 217, 67)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Mainmenu/Newgamebutton/NewGame/Textanim_NewGame/MainmenuNewgame:offset")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_oohrw"]
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mainmenu/Newgamebutton/NewGame/Textanim_NewGame/MainmenuNewgame:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 217, 67)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Mainmenu/Newgamebutton/NewGame/Textanim_NewGame/MainmenuNewgame:offset")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_haa6u"]
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mainmenu/Newgamebutton/NewGame/Textanim_NewGame/MainmenuNewgame:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(217, 0, 217, 67), Rect2(434, 0, 217, 67), Rect2(651, 0, 217, 67), Rect2(868, 0, 217, 67), Rect2(1085, 0, 217, 67), Rect2(1302, 0, 217, 67), Rect2(1519, 0, 217, 67)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Mainmenu/Newgamebutton/NewGame/Textanim_NewGame/MainmenuNewgame:offset")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8ugns"]
+_data = {
+&"Hover_Active": SubResource("Animation_lyypv"),
+&"Hover_Inactive": SubResource("Animation_oohrw"),
+&"InactiveToActicve": SubResource("Animation_haa6u")
+}
+
+[sub_resource type="Animation" id="Animation_8ugns"]
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(1736, 0, 217, 67)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5hki4"]
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 217, 67)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_nhmch"]
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(217, 0, 217, 67), Rect2(434, 0, 217, 67), Rect2(651, 0, 217, 67), Rect2(868, 0, 217, 67), Rect2(1085, 0, 217, 67), Rect2(1302, 0, 217, 67), Rect2(1519, 0, 217, 67)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xmgp2"]
+_data = {
+&"Hover_Active": SubResource("Animation_8ugns"),
+&"Hover_Inactive": SubResource("Animation_5hki4"),
+&"InactiveToActicve": SubResource("Animation_nhmch")
+}
+
+[sub_resource type="Animation" id="Animation_xmgp2"]
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 1440, 922)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_nv8st"]
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(28800, 0, 1920, 1230)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_xhot1"]
+length = 2.25
+step = 0.125
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(1440, 0, 1440, 922), Rect2(2880, 0, 1440, 922), Rect2(4320, 0, 1440, 922), Rect2(5760, 0, 1440, 922), Rect2(7200, 0, 1440, 922), Rect2(8640, 0, 1440, 922), Rect2(10080, 0, 1440, 922), Rect2(11520, 0, 1440, 922), Rect2(12960, 0, 1440, 922), Rect2(14400, 0, 1440, 922), Rect2(0, 922, 1440, 922)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y6i8v"]
+_data = {
+&"Hidden": SubResource("Animation_xmgp2"),
+&"Shown": SubResource("Animation_nv8st"),
+&"WipeEffect": SubResource("Animation_xhot1")
+}
+
+[node name="Node2D" type="Node2D" unique_id=1034501914]
+
+[node name="Illustration31" type="Sprite2D" parent="." unique_id=415354783]
+texture = ExtResource("1_keokh")
+centered = false
+
+[node name="Mainmenu" type="Node2D" parent="." unique_id=2049352786]
+position = Vector2(2686, 1418)
+scale = Vector2(3, 3)
+script = ExtResource("2_433es")
+
+[node name="AudioStreamPlayer_UI" type="AudioStreamPlayer2D" parent="Mainmenu" unique_id=1852089406]
+stream = ExtResource("3_oohrw")
+volume_db = 1.515
+
+[node name="UiMmPress" type="AudioStreamPlayer" parent="Mainmenu/AudioStreamPlayer_UI" unique_id=1115910340]
+stream = ExtResource("4_haa6u")
+
+[node name="UiBtnHover" type="AudioStreamPlayer" parent="Mainmenu/AudioStreamPlayer_UI" unique_id=219261305]
+stream = ExtResource("3_oohrw")
+
+[node name="Newgamebutton" type="Node2D" parent="Mainmenu" unique_id=1752407211]
+
+[node name="NewGame" type="MenuButton" parent="Mainmenu/Newgamebutton" unique_id=1313724056]
+offset_left = -853.3334
+offset_top = -71.0
+offset_right = -628.3334
+offset_bottom = 4.0
+
+[node name="Textanim_NewGame" type="AnimationPlayer" parent="Mainmenu/Newgamebutton/NewGame" unique_id=479257375]
+root_node = NodePath("../../../..")
+libraries/ = SubResource("AnimationLibrary_8ugns")
+
+[node name="MainmenuNewgame" type="Sprite2D" parent="Mainmenu/Newgamebutton/NewGame/Textanim_NewGame" unique_id=527772423]
+clip_children = 2
+position = Vector2(464, 1318)
+scale = Vector2(3, 3)
+texture = ExtResource("3_apy4m")
+region_enabled = true
+region_rect = Rect2(1736, 0, 217, 67)
+
+[node name="continuebutton" type="Node2D" parent="Mainmenu" unique_id=510966669]
+
+[node name="Continue" type="MenuButton" parent="Mainmenu/continuebutton" unique_id=174365719]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -846.6667
+offset_top = 4.666668
+offset_right = -621.6667
+offset_bottom = 79.66667
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Textanim_Continue" type="AnimationPlayer" parent="Mainmenu/continuebutton/Continue" unique_id=1497054100]
+root_node = NodePath("MainmenuContinueHoverinactive")
+libraries/ = SubResource("AnimationLibrary_xmgp2")
+
+[node name="MainmenuContinueHoverinactive" type="Sprite2D" parent="Mainmenu/continuebutton/Continue/Textanim_Continue" unique_id=1262125324]
+position = Vector2(483, 1547)
+scale = Vector2(3, 3)
+texture = ExtResource("3_lyypv")
+region_enabled = true
+region_rect = Rect2(1736, 0, 217, 67)
+
+[node name="QuitButton" type="Node2D" parent="Mainmenu" unique_id=1953452139]
+
+[node name="Quit" type="MenuButton" parent="Mainmenu/QuitButton" unique_id=2019437833]
+offset_left = -812.6667
+offset_top = 89.33332
+offset_right = -689.3334
+offset_bottom = 138.99997
+
+[node name="Textanim_quit" type="AnimationPlayer" parent="Mainmenu/QuitButton/Quit" unique_id=77182336]
+root_node = NodePath("Mainmenuquit")
+libraries/ = SubResource("AnimationLibrary_xmgp2")
+
+[node name="Mainmenuquit" type="Sprite2D" parent="Mainmenu/QuitButton/Quit/Textanim_quit" unique_id=1227211641]
+position = Vector2(415.00003, 1757)
+scale = Vector2(3, 3)
+texture = ExtResource("6_oohrw")
+region_enabled = true
+region_rect = Rect2(0, 0, 217, 67)
+
+[node name="TransitionToBlackScreenwipe" type="Sprite2D" parent="Mainmenu" unique_id=1476775591]
+z_index = 48
+position = Vector2(-894.99994, -470.99997)
+scale = Vector2(0.7495369, 0.7480115)
+texture = ExtResource("7_haa6u")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 922, 1440, 922)
+
+[node name="Screen_Transition_Wipetoblack" type="AnimationPlayer" parent="Mainmenu/TransitionToBlackScreenwipe" unique_id=1001899377]
+libraries/ = SubResource("AnimationLibrary_y6i8v")
+
+[connection signal="mouse_entered" from="Mainmenu/Newgamebutton/NewGame" to="Mainmenu" method="_on_new_game_mouse_entered"]
+[connection signal="mouse_exited" from="Mainmenu/Newgamebutton/NewGame" to="Mainmenu" method="_on_new_game_mouse_exited"]
+[connection signal="animation_finished" from="Mainmenu/Newgamebutton/NewGame/Textanim_NewGame" to="Mainmenu" method="_on_textanim_new_game_animation_finished"]
+[connection signal="mouse_entered" from="Mainmenu/continuebutton/Continue" to="Mainmenu" method="_on_continue_mouse_entered"]
+[connection signal="mouse_exited" from="Mainmenu/continuebutton/Continue" to="Mainmenu" method="_on_continue_mouse_exited"]
+[connection signal="animation_finished" from="Mainmenu/continuebutton/Continue/Textanim_Continue" to="Mainmenu" method="_on_textanim_continue_animation_finished"]
+[connection signal="mouse_entered" from="Mainmenu/QuitButton/Quit" to="Mainmenu" method="_on_quit_mouse_entered"]
+[connection signal="mouse_exited" from="Mainmenu/QuitButton/Quit" to="Mainmenu" method="_on_quit_mouse_exited"]
+[connection signal="pressed" from="Mainmenu/QuitButton/Quit" to="Mainmenu" method="_on_quit_pressed"]
+[connection signal="animation_finished" from="Mainmenu/QuitButton/Quit/Textanim_quit" to="Mainmenu" method="_on_textanim_quit_animation_finished"]
+[connection signal="animation_finished" from="Mainmenu/TransitionToBlackScreenwipe/Screen_Transition_Wipetoblack" to="Mainmenu" method="_on_screen_transition_wipetoblack_animation_finished"]

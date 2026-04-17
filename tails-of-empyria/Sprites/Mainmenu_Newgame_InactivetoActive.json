@@ -1,0 +1,97 @@
+{ "frames": {
+   "Mainmenu_Newgame 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 217, "h": 67 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 217, "h": 67 },
+    "sourceSize": { "w": 217, "h": 67 },
+    "duration": 100
+   },
+   "Mainmenu_Newgame 1.aseprite": {
+    "frame": { "x": 217, "y": 0, "w": 217, "h": 67 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 217, "h": 67 },
+    "sourceSize": { "w": 217, "h": 67 },
+    "duration": 100
+   },
+   "Mainmenu_Newgame 2.aseprite": {
+    "frame": { "x": 434, "y": 0, "w": 217, "h": 67 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 217, "h": 67 },
+    "sourceSize": { "w": 217, "h": 67 },
+    "duration": 100
+   },
+   "Mainmenu_Newgame 3.aseprite": {
+    "frame": { "x": 651, "y": 0, "w": 217, "h": 67 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 217, "h": 67 },
+    "sourceSize": { "w": 217, "h": 67 },
+    "duration": 100
+   },
+   "Mainmenu_Newgame 4.aseprite": {
+    "frame": { "x": 868, "y": 0, "w": 217, "h": 67 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 217, "h": 67 },
+    "sourceSize": { "w": 217, "h": 67 },
+    "duration": 100
+   },
+   "Mainmenu_Newgame 5.aseprite": {
+    "frame": { "x": 1085, "y": 0, "w": 217, "h": 67 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 217, "h": 67 },
+    "sourceSize": { "w": 217, "h": 67 },
+    "duration": 100
+   },
+   "Mainmenu_Newgame 6.aseprite": {
+    "frame": { "x": 1302, "y": 0, "w": 217, "h": 67 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 217, "h": 67 },
+    "sourceSize": { "w": 217, "h": 67 },
+    "duration": 100
+   },
+   "Mainmenu_Newgame 7.aseprite": {
+    "frame": { "x": 1519, "y": 0, "w": 217, "h": 67 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 217, "h": 67 },
+    "sourceSize": { "w": 217, "h": 67 },
+    "duration": 100
+   },
+   "Mainmenu_Newgame 8.aseprite": {
+    "frame": { "x": 1736, "y": 0, "w": 217, "h": 67 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 217, "h": 67 },
+    "sourceSize": { "w": 217, "h": 67 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.18-beta1-x64",
+  "image": "Mainmenu_Newgame_InactivetoActive.png",
+  "format": "RGBA8888",
+  "size": { "w": 1953, "h": 67 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Hover_Inactive", "from": 0, "to": 0, "direction": "forward", "color": "#000000ff" },
+   { "name": "InactiveToActicve", "from": 1, "to": 7, "direction": "forward", "color": "#000000ff" },
+   { "name": "Hover_Active", "from": 8, "to": 8, "direction": "forward", "color": "#000000ff" }
+  ],
+  "layers": [
+   { "name": "Layer 1", "opacity": 255, "blendMode": "normal" },
+   { "name": "Ease In-Out Tweened Layer", "opacity": 255, "blendMode": "normal" },
+   { "name": "Ease Out Tweened Layer", "opacity": 255, "blendMode": "normal" },
+   { "name": "Ease In Tweened Layer", "opacity": 255, "blendMode": "normal" },
+   { "name": "Linear Tweened Layer", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}
