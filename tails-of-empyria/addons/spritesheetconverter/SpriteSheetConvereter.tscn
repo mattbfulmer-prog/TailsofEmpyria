@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cw8tf6acecoh5"]
+[gd_scene format=3 uid="uid://cw8tf6acecoh5"]
 
 [ext_resource type="Script" uid="uid://umpvatpr5ac1" path="res://addons/spritesheetconverter/spritesheets_to_spriteframes.gd" id="1_u6q3o"]
 
-[node name="SpriteSheetConverter" type="Control"]
+[node name="SpriteSheetConverter" type="Control" unique_id=1759496883]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_u6q3o")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1387871128]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,122 +19,122 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1163197205]
 custom_minimum_size = Vector2(60, 50)
 layout_mode = 2
 text = "Convert any SpriteTileSheet exported from \"Aseprite\" with the JSON Data into a \"SpriteFrames\" Resource."
 autowrap_mode = 2
 
-[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=254846817]
 layout_mode = 2
 
-[node name="SpriteSheet" type="HBoxContainer" parent="VBoxContainer"]
+[node name="SpriteSheet" type="HBoxContainer" parent="VBoxContainer" unique_id=388053139]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/SpriteSheet"]
+[node name="Label" type="Label" parent="VBoxContainer/SpriteSheet" unique_id=1461877221]
 layout_mode = 2
 text = "SpriteSheet Path"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/SpriteSheet"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/SpriteSheet" unique_id=1469859118]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "res://Images/placholder.png"
 
-[node name="JsonData" type="HBoxContainer" parent="VBoxContainer"]
+[node name="JsonData" type="HBoxContainer" parent="VBoxContainer" unique_id=603987708]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/JsonData"]
+[node name="Label" type="Label" parent="VBoxContainer/JsonData" unique_id=1567176634]
 layout_mode = 2
 text = "Data Path"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/JsonData"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/JsonData" unique_id=543513248]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "res://Images/placholder.json"
 
-[node name="HSeparator2" type="HSeparator" parent="VBoxContainer"]
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer" unique_id=295550972]
 layout_mode = 2
 
-[node name="TabContainer" type="TabContainer" parent="VBoxContainer"]
+[node name="TabContainer" type="TabContainer" parent="VBoxContainer" unique_id=551895682]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 current_tab = 0
 
-[node name="Create" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
+[node name="Create" type="VBoxContainer" parent="VBoxContainer/TabContainer" unique_id=1303587445]
 layout_mode = 2
 metadata/_tab_index = 0
 
-[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Create"]
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Create" unique_id=484415277]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 text = "Use this tab to create a SpriteFrames Resource."
 autowrap_mode = 2
 
-[node name="ExportPath" type="HBoxContainer" parent="VBoxContainer/TabContainer/Create"]
+[node name="ExportPath" type="HBoxContainer" parent="VBoxContainer/TabContainer/Create" unique_id=5258549]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Create/ExportPath"]
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Create/ExportPath" unique_id=1825415800]
 layout_mode = 2
 text = "Export Path"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/TabContainer/Create/ExportPath"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/TabContainer/Create/ExportPath" unique_id=447250622]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "res://export/"
 
-[node name="ExportName" type="HBoxContainer" parent="VBoxContainer/TabContainer/Create"]
+[node name="ExportName" type="HBoxContainer" parent="VBoxContainer/TabContainer/Create" unique_id=204793938]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Create/ExportName"]
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Create/ExportName" unique_id=1438043169]
 layout_mode = 2
 text = "Export Name"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/TabContainer/Create/ExportName"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/TabContainer/Create/ExportName" unique_id=751756599]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Placeholder (Names the file the same as the image)"
 
-[node name="Append" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
+[node name="Append" type="VBoxContainer" parent="VBoxContainer/TabContainer" unique_id=126917030]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
-[node name="Label2" type="Label" parent="VBoxContainer/TabContainer/Append"]
+[node name="Label2" type="Label" parent="VBoxContainer/TabContainer/Append" unique_id=1109604683]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 text = "Use this tab to append animations to an existing SpriteFrames Resource."
 autowrap_mode = 2
 
-[node name="ResourcePath" type="HBoxContainer" parent="VBoxContainer/TabContainer/Append"]
+[node name="ResourcePath" type="HBoxContainer" parent="VBoxContainer/TabContainer/Append" unique_id=1875387374]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Append/ResourcePath"]
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Append/ResourcePath" unique_id=1241140328]
 layout_mode = 2
 text = "Append to:"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/TabContainer/Append/ResourcePath"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/TabContainer/Append/ResourcePath" unique_id=1307941104]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "res://resource/placeholder.tres"
 
-[node name="CheckBox" type="CheckBox" parent="VBoxContainer/TabContainer/Append"]
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/TabContainer/Append" unique_id=1823661662]
 layout_mode = 2
 tooltip_text = "Overwrites the previous tagged animations with new ones gathered from the data"
 button_pressed = true
 text = "Overwrite Animations"
 
-[node name="HSeparator3" type="HSeparator" parent="VBoxContainer"]
+[node name="HSeparator3" type="HSeparator" parent="VBoxContainer" unique_id=1151846609]
 layout_mode = 2
 
-[node name="ExportOptions" type="HBoxContainer" parent="VBoxContainer"]
+[node name="ExportOptions" type="HBoxContainer" parent="VBoxContainer" unique_id=1737182542]
 layout_mode = 2
 
-[node name="CheckBox" type="CheckBox" parent="VBoxContainer/ExportOptions"]
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/ExportOptions" unique_id=1963748975]
 layout_mode = 2
 tooltip_text = "Overwrites FPS of ALL tagged animations that are created/added to the specified FPS"
 text = "Overwrite FPS"
 
-[node name="SpinBox" type="SpinBox" parent="VBoxContainer/ExportOptions"]
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/ExportOptions" unique_id=850226853]
 layout_mode = 2
 min_value = 1.0
 value = 10.0
@@ -142,19 +142,19 @@ rounded = true
 editable = false
 prefix = "FPS"
 
-[node name="ConvertButton" type="Button" parent="VBoxContainer"]
+[node name="ConvertButton" type="Button" parent="VBoxContainer" unique_id=1759062136]
 layout_mode = 2
 disabled = true
 text = "Convert"
 
-[node name="AppendButton" type="Button" parent="VBoxContainer"]
+[node name="AppendButton" type="Button" parent="VBoxContainer" unique_id=1076695153]
 visible = false
 layout_mode = 2
 disabled = true
 text = "Append
 "
 
-[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer" unique_id=450776272]
 layout_mode = 2
 size_flags_vertical = 3
 bbcode_enabled = true
