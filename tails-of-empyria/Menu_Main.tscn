@@ -359,7 +359,6 @@ region_enabled = true
 region_rect = Rect2(0, 0, 217, 67)
 
 [node name="TransitionToBlackScreenwipe" type="Sprite2D" parent="Mainmenu" unique_id=1476775591]
-visible = false
 z_index = 48
 position = Vector2(-894.99994, -470.99997)
 scale = Vector2(0.7495369, 0.7480115)

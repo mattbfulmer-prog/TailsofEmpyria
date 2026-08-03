@@ -28,7 +28,7 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/QuickAudioPreview/plugin.cfg", "res://addons/anim_sheet/plugin.cfg", "res://addons/aseprite_spritesheet_importer/plugin.cfg", "res://addons/retiler/plugin.cfg", "res://addons/spritesheetconverter/plugin.cfg", "res://addons/sprouty_dialogs/plugin.cfg", "res://addons/vision_cone_2d/plugin.cfg")
+enabled=PackedStringArray("res://addons/anim_sheet/plugin.cfg", "res://addons/aseprite_importer/plugin.cfg", "res://addons/retiler/plugin.cfg", "res://addons/spritesheetconverter/plugin.cfg", "res://addons/sprouty_dialogs/plugin.cfg", "res://addons/vision_cone_2d/plugin.cfg")
 
 [graph_dialogs]
 
