@@ -8,6 +8,10 @@
 
 config_version=5
 
+[animation]
+
+compatibility/size/mode=0
+
 [application]
 
 config/name="Tails of Empyria"
@@ -21,14 +25,16 @@ SproutyDialogs="*uid://c8gxm75j80u8c"
 
 [display]
 
-window/size/viewport_width=3246
-window/size/viewport_height=2080
-window/size/mode=2
+window/size/viewport_width=2000
+window/size/viewport_height=1200
+window/size/sharp_corners=true
 window/stretch/mode="canvas_items"
+window/stretch/scale=2.0
+window/stretch/scale_mode="integer"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/anim_sheet/plugin.cfg", "res://addons/aseprite_importer/plugin.cfg", "res://addons/retiler/plugin.cfg", "res://addons/spritesheetconverter/plugin.cfg", "res://addons/sprouty_dialogs/plugin.cfg", "res://addons/vision_cone_2d/plugin.cfg")
+enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg", "res://addons/anim_sheet/plugin.cfg", "res://addons/aseprite_importer/plugin.cfg", "res://addons/spritesheetconverter/plugin.cfg", "res://addons/sprouty_dialogs/plugin.cfg", "res://addons/visibility_collision_shape_editor/plugin.cfg", "res://addons/vision_cone_2d/plugin.cfg")
 
 [graph_dialogs]
 
@@ -71,6 +77,34 @@ dialogs_continue_action={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":1,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+ui_click={
+"deadzone": 0.2,
+"events": [null, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(593, 17),"global_position":Vector2(607, 90),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
+]
+}
+
+[layer_names]
+
+edgar/layer_1=""
+edgar/layer_2=""
+edgar/layer_3=""
+edgar/layer_4=""
+edgar/layer_5=""
+edgar/layer_6=""
+edgar/layer_7=""
+edgar/layer_8=""
+edgar/layer_9=""
+edgar/layer_10=""
+edgar/layer_11=""
+edgar/layer_12=""
+edgar/layer_13=""
+edgar/layer_14=""
+edgar/layer_15=""
+edgar/layer_16=""
+edgar/layer_17=""
+edgar/layer_18=""
+edgar/layer_19=""
+edgar/layer_20=""
 
 [physics]
 
@@ -79,5 +113,9 @@ dialogs_continue_action={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true
+
+[shader_library]
+
+internal/previous_shaders_folder="res://shaders/shaderlib/"

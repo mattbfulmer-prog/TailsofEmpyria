@@ -1,0 +1,68 @@
+[gd_resource type="TileSet" format=3 uid="uid://bmln04cftwp8f"]
+
+[ext_resource type="Texture2D" uid="uid://d06hdmixwqinu" path="res://Sprites/Tilemaps/Test_Tileset_scale2x2.png" id="3_vj621"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_2is3x"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2is3x"]
+texture = ExtResource("3_vj621")
+texture_region_size = Vector2i(100, 100)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+0:4/0 = 0
+2:4/0 = 0
+0:5/0 = 0
+2:5/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3qbnl"]
+texture = ExtResource("3_vj621")
+texture_region_size = Vector2i(100, 100)
+6:5/0 = 0
+6:5/0/custom_data_0 = true
+6:4/0 = 0
+6:4/0/custom_data_0 = true
+7:4/0 = 0
+7:4/0/custom_data_0 = true
+8:5/0 = 0
+8:5/0/custom_data_0 = true
+7:3/0 = 0
+7:3/0/custom_data_0 = true
+6:3/0 = 0
+6:3/0/custom_data_0 = true
+8:2/0 = 0
+8:2/0/custom_data_0 = true
+8:3/0 = 0
+8:3/0/custom_data_0 = true
+6:1/0 = 0
+6:1/0/custom_data_0 = true
+7:1/0 = 0
+7:1/0/custom_data_0 = true
+8:1/0 = 0
+8:1/0/custom_data_0 = true
+7:0/0 = 0
+7:0/0/custom_data_0 = true
+6:0/0 = 0
+6:0/0/custom_data_0 = true
+8:0/0 = 0
+8:0/0/custom_data_0 = true
+6:2/0 = 0
+6:2/0/custom_data_0 = true
+7:2/0 = 0
+7:2/0/custom_data_0 = true
+
+[resource]
+tile_size = Vector2i(100, 100)
+custom_data_layer_0/name = "walkable"
+custom_data_layer_0/type = 1
+sources/1 = SubResource("TileSetAtlasSource_2is3x")
+sources/0 = SubResource("TileSetScenesCollectionSource_2is3x")
+sources/8 = SubResource("TileSetAtlasSource_3qbnl")

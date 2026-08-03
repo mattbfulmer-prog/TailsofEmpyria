@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ce7oqy50sujks"]
+
+[ext_resource type="TileSet" uid="uid://b7pg08k1hnxsk" path="res://Sprites/Tilemaps/new_tile_set.tres" id="1_3omar"]
+
+[node name="TestTileMap" type="TileMapLayer" unique_id=849023575]
+tile_set = ExtResource("1_3omar")

@@ -1,34 +1,14 @@
 [remap]
 
-importer="aseprite.spritesheet.importer"
-type="PortableCompressedTexture2D"
-uid="uid://boiuua667fxwd"
-valid=false
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://x1hwep5g6g30"
+path="res://.godot/imported/item_Surface_Orb_Concept_2.aseprite-70a43899ac1dc8679d5ffdd3233a7a20.res"
 
 [deps]
 
 source_file="res://Sprites/item_Surface_Orb_Concept_2.aseprite"
+dest_files=["res://.godot/imported/item_Surface_Orb_Concept_2.aseprite-70a43899ac1dc8679d5ffdd3233a7a20.res"]
 
 [params]
 
-layers/export_hidden_layers=false
-layers/flatten_layer_groups=false
-layers/split_layers=false
-generate_resources/atlas_textures=false
-generate_resources/spriteframes=false
-generate_resources/ignore_framerate=false
-export_options/sheet_type=0
-export_options/sheet_width=0
-export_options/sheet_height=0
-export_options/sheet_columns=0
-export_options/sheet_rows=0
-export_options/border_padding=0
-export_options/shape_padding=0
-export_options/inner_padding=0
-export_options/trim=false
-export_options/extrude=false
-compress/mode=0
-compress/lossy_quality=0.8
-compress/normal_map=false
-debug/keep_json=false
-debug/keep_png=false

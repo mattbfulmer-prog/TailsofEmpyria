@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dmhg1gjc5fvww"]
+
+[ext_resource type="Script" uid="uid://cjlm3s2flfnll" path="res://mainmenu.gd" id="1_8qtwp"]
+[ext_resource type="Script" uid="uid://b42ordqnjrr3h" path="res://menulayout.gd" id="2_0o4t1"]
+
+[node name="MainMenu" type="CanvasGroup" unique_id=362120979]
+script = ExtResource("1_8qtwp")
+
+[node name="Newgame" type="MenuButton" parent="." unique_id=164272060]
+offset_right = 240.0
+offset_bottom = 100.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Continue" type="MenuButton" parent="." unique_id=959177772]
+offset_top = 12.0
+offset_right = 8.0
+offset_bottom = 20.0
+metadata/_edit_use_anchors_ = true
+
+[node name="buttonContainer" type="VBoxContainer" parent="." unique_id=704666004]
+offset_right = 8.0
+offset_bottom = 20.0
+
+[node name="Control" type="Control" parent="." unique_id=266263621]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_0o4t1")
+
+[connection signal="mouse_entered" from="Newgame" to="." method="_on_new_game_mouse_entered"]
+[connection signal="mouse_exited" from="Newgame" to="." method="_on_new_game_mouse_exited"]
+[connection signal="mouse_entered" from="Continue" to="." method="_on_continue_mouse_entered"]
+[connection signal="mouse_exited" from="Continue" to="." method="_on_continue_mouse_exited"]

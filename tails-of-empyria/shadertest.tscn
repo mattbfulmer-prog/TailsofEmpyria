@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://bx7j33x4qub7l"]
+
+[ext_resource type="Script" uid="uid://cbfvpw1yj2rvg" path="res://shadertest.gd" id="1_qu1m5"]
+[ext_resource type="Texture2D" uid="uid://br3p7f8qmobw" path="res://Sprites/Game mockup Apr_23 2026.png" id="2_rj2fn"]
+[ext_resource type="Texture2D" uid="uid://dc4cu226jocm1" path="res://Sprites/Game mockup Apr_23 2026_shadertest.png" id="3_6yv3y"]
+[ext_resource type="Texture2D" uid="uid://cxtrav4ppl54u" path="res://Sprites/Game mockup Apr_23 2026_shadertest_Filter_part2.png" id="4_168kg"]
+[ext_resource type="Texture2D" uid="uid://ba8k5gm67fucq" path="res://Sprites/Rhea_charactersprite_transparent.png" id="4_msg8w"]
+[ext_resource type="Shader" uid="uid://c4ptl31u2ny15" path="res://shaders/shaderlib/soft_drop_shadow_for_pixel_art.gdshader" id="5_iudo4"]
+[ext_resource type="Texture2D" uid="uid://b0xstxws8rwoq" path="res://Sprites/Game mockup Apr_23 2026_shadertest_Filter.png" id="5_msg8w"]
+[ext_resource type="Shader" uid="uid://c7tjurishf5yv" path="res://shaders/shaderlib/adobe_animate_blend_modes.gdshader" id="6_2khkm"]
+[ext_resource type="Texture2D" uid="uid://c8lyqtsvgastx" path="res://Sprites/Game mockup Apr_23 2026_shadertest_UI.png" id="6_iudo4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ch5hu"]
+shader = ExtResource("5_iudo4")
+shader_parameter/shadow_only = true
+shader_parameter/shadow_color = Color(0, 0, 0, 0.53333336)
+shader_parameter/blur_std = 2.35
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_50u1r"]
+shader = ExtResource("6_2khkm")
+shader_parameter/blend_mode = 6
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jeudj"]
+shader = ExtResource("6_2khkm")
+shader_parameter/blend_mode = 5
+
+[node name="shadertest" type="Node2D" unique_id=926708123]
+script = ExtResource("1_qu1m5")
+
+[node name="GameMockupApr232026" type="Sprite2D" parent="." unique_id=500694158]
+position = Vector2(1634.9999, 1062)
+scale = Vector2(0.72066665, 0.63242424)
+texture = ExtResource("2_rj2fn")
+
+[node name="GameMockupApr232026Shadertest" type="Sprite2D" parent="." unique_id=616000356]
+top_level = true
+position = Vector2(2.0000305, 0)
+scale = Vector2(0.84333324, 0.6706061)
+texture = ExtResource("3_6yv3y")
+centered = false
+
+[node name="RheaCharacterspriteTransparent" type="Sprite2D" parent="GameMockupApr232026Shadertest" unique_id=1000341901]
+position = Vector2(1619.3341, 1287.1107)
+scale = Vector2(6.0956535, 6.0956516)
+texture = ExtResource("4_msg8w")
+
+[node name="RheaCharacterspriteTransparent2" type="Sprite2D" parent="GameMockupApr232026Shadertest/RheaCharacterspriteTransparent" unique_id=39263312]
+show_behind_parent = true
+material = SubResource("ShaderMaterial_ch5hu")
+position = Vector2(10.926602, 5.966221)
+scale = Vector2(0.92127866, 1.0438236)
+texture = ExtResource("4_msg8w")
+
+[node name="GameMockupApr232026ShadertestFilterPart3" type="Sprite2D" parent="GameMockupApr232026Shadertest" unique_id=998815262]
+material = SubResource("ShaderMaterial_50u1r")
+position = Vector2(2235.4302, 1837.3748)
+scale = Vector2(1.9254452, 2.5002475)
+texture = ExtResource("4_168kg")
+
+[node name="GameMockupApr232026ShadertestFilterPart2" type="Sprite2D" parent="GameMockupApr232026Shadertest" unique_id=1213984596]
+material = SubResource("ShaderMaterial_50u1r")
+position = Vector2(2121.6467, 1728.2703)
+scale = Vector2(1.3876041, 1.581217)
+texture = ExtResource("4_168kg")
+
+[node name="GameMockupApr232026ShadertestFilter" type="Sprite2D" parent="GameMockupApr232026Shadertest" unique_id=1768841361]
+material = SubResource("ShaderMaterial_jeudj")
+position = Vector2(-27.752079, -143.89075)
+scale = Vector2(1.0046253, 1.0119789)
+texture = ExtResource("5_msg8w")
+centered = false
+
+[node name="GameMockupApr232026ShadertestUi" type="Sprite2D" parent="GameMockupApr232026Shadertest" unique_id=1460879643]
+position = Vector2(2250.6938, 1650.7908)
+texture = ExtResource("6_iudo4")
