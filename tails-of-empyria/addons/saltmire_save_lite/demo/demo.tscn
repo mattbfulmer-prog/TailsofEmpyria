@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cce2o3chfffpk"]
+
+[ext_resource type="Script" uid="uid://dle60ibg4br8t" path="res://addons/saltmire_save_lite/demo/demo.gd" id="1_bn8ml"]
+[ext_resource type="Script" uid="uid://b2l37qxncqxw" path="res://addons/saltmire_save_lite/Save.gd" id="2_owkbk"]
+
+[node name="Demo" type="Control" unique_id=725747306]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bn8ml")
+
+[node name="Node" type="Node" parent="." unique_id=592875982]
+script = ExtResource("2_owkbk")
+
+[node name="BG" type="ColorRect" parent="." unique_id=2038267286]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.07, 0.08, 0.11, 1)
+
+[node name="Panel" type="PanelContainer" parent="." unique_id=841960171]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -460.0
+offset_top = -240.0
+offset_right = 460.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=1462378494]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 24
+
+[node name="Log" type="RichTextLabel" parent="Panel/Margin" unique_id=262452]
+layout_mode = 2
+bbcode_enabled = true
+scroll_active = false
