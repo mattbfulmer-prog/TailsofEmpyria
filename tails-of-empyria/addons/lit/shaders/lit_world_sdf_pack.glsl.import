@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://ddmrdcxkwk26"
+path="res://.godot/imported/lit_world_sdf_pack.glsl-481f79c36d6b99dafc207ef3ce909bc3.res"
+
+[deps]
+
+source_file="res://addons/lit/shaders/lit_world_sdf_pack.glsl"
+dest_files=["res://.godot/imported/lit_world_sdf_pack.glsl-481f79c36d6b99dafc207ef3ce909bc3.res"]
+
+[params]
+
